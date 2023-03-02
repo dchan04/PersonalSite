@@ -1,0 +1,33 @@
+.navbar {
+    margin: auto;
+    min-width: 1700px;
+    background: #DDD0C8 !important;
+}
+
+.nav-link {
+    position: relative;
+    color: white !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 19px;
+    margin-right: 5vh;
+    color: #323232 !important;
+}
+
+.nav-link:hover {
+    color:white !important;
+}
+
+.logo {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    margin-right: 5vh;
+    background: #323232;
+    border-radius: 6px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    color: White;
+}

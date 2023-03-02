@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33402.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "personalsite", "personalsite.esproj", "{D7B950B8-AD3C-4328-9AB3-E1DA154504AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7B950B8-AD3C-4328-9AB3-E1DA154504AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7B950B8-AD3C-4328-9AB3-E1DA154504AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7B950B8-AD3C-4328-9AB3-E1DA154504AF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D7B950B8-AD3C-4328-9AB3-E1DA154504AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7B950B8-AD3C-4328-9AB3-E1DA154504AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7B950B8-AD3C-4328-9AB3-E1DA154504AF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A336314-B63D-4DA5-BDE2-BAAA3B956E0F}
+	EndGlobalSection
+EndGlobal

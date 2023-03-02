@@ -1,0 +1,2 @@
+C:\Users\Darren Chan\source\repos\PersonalSite\obj\Debug\personalsite.esproj.SuggestedBindingRedirects.cache
+C:\Users\Darren Chan\source\repos\PersonalSite\obj\Debug\personalsite.esproj.CoreCompileInputs.cache
