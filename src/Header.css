@@ -1,6 +1,7 @@
 .navbar {
-    margin: auto;
-    min-width: 1700px;
+    min-width: 1800px;
+    max-width: 1920px;
+    height: auto;
     background: #DDD0C8 !important;
 }
 

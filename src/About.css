@@ -1,0 +1,9 @@
+.aboutCounter {
+    position: relative;
+    width: auto;
+    min-width: 1800px;
+    max-width: 1920px;
+    min-height: 1080px;
+    background: #DDD0C8;
+    color: #323232;
+}

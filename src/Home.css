@@ -1,8 +1,9 @@
 .HomeContainer {
     position: relative;
     width: auto;
-    min-width:1700px;
-    height: 100vh;
+    min-width: 1800px;
+    max-width: 1920px;
+    min-height: 1080px;
     background: #DDD0C8;
     color: #323232;
 }
@@ -11,7 +12,7 @@
     position: absolute;
     width: 415px;
     height: 108px;
-    left: 308px;
+    left: 15%;
     top: 214px;
     font-family: 'Inter';
     font-style: normal;
@@ -26,7 +27,7 @@
     position: absolute;
     width: 415px;
     height: 90px;
-    left: 308px;
+    left: 15%;
     top: 337px;
     font-family: 'Inter';
     font-style: normal;
@@ -37,26 +38,13 @@
     color: #323232;
 }
 
-.overviewButton {
-    position: absolute;
-    width: 123px;
-    height: 19px;
-    left: 308px;
-    top: 470px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    text-align:left;
-    color: #323232;
-}
 .homePic {
     position: absolute;
     width: 862px;
     height: 660.81px;
     left: 756px;
     top: 80px;
+    float:right;
     background: #171A1B;
     opacity: 0.8;
     border: 1px solid #4A4A4A;
@@ -112,10 +100,12 @@
     color: #FFFFFF;
 }
 
-.education {
+.skillsCategory {
     position: absolute;
-    width: 190px;
-    height: 116px;
+    min-width: 600px;
+    min-height: 116px;
+    height: auto;
+    width: auto;
     left: 106px;
     top: 130px;
     font-family: 'Fira Sans';
@@ -129,12 +119,14 @@
     color: #FFFFFF;
 }
 
-.aboutMe {
+.educationCategory {
     position: absolute;
-    width: 190px;
-    height: 116px;
+    min-width: 190px;
+    min-height: 116px;
+    height: auto;
+    width: auto;
     left: 106px;
-    top: 300px;
+    top: 370px;
     font-family: 'Fira Sans';
     font-style: normal;
     font-weight: 400;
@@ -147,31 +139,90 @@
 }
 
 .purpleText {
-    color: #7000FF;
+    position: relative;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    /* or 112% */
+    color: #0094ff;
     float: left;
 }
 
-.whiteText {
-    color: white;
-    padding-left: 1em;
+.firstBracket {
+    position: relative;
     float: left;
+    padding-left: 2em;
+    color: white;
 }
+
 
 .endBracket {
     position:absolute;
-    top: 100px;
+    top: 100%;
     left: 0%;
 }
 
 .category {
     position: relative;
+    clear: left;
+    padding: 1em 0em 1em 4em;
     font-family: 'Fira Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    text-align: start;
     /* or 112% */
-
     letter-spacing: -0.015em;
     color: #0EE6B7;
+}
+
+.subCategory {
+    position: relative;
+    clear: left;
+    padding: 1em 0em 1em 4em;
+    margin-top: -0.5em;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: start;
+    letter-spacing: -0.015em;
+    color: #0EE6B7;
+}
+
+.categoryText {
+    padding-left:0.5em;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: start;
+    letter-spacing: 0.025em;
+    color: white;
+}
+
+.rounded-Button {
+    position: absolute;
+    border-style: none;
+    background: #DDD0C8;
+    left: 15%;
+    top: 470px;
+}
+
+.rounded-Button2 {
+    position: absolute;
+    border-style: none;
+    background: #DDD0C8;
+    left: 20%;
+    top: 470px;
+    opacity: 0.80;
+}
+
+.linkIcons {
+    width: 60px;
+    height: 60px;
 }
