@@ -1,34 +1,47 @@
 .navbar {
-    min-width: 1800px;
-    max-width: 1920px;
+    position: fixed;
+    width: 100%;
+    min-width: 50px;
     height: auto;
-    background: #DDD0C8 !important;
+    --floral-white: #fffcf2ff;
+    --timberwolf: #ccc5b9ff;
+    --black-olive: #403d39ff;
+    --eerie-black: #252422ff;
+    --flame: #eb5e28ff;
+    justify-content:center;
+    background-color: transparent !important;
+    z-index: 3;
 }
+
 
 .nav-link {
+    height: 50px;
     position: relative;
     color: white !important;
+    font-family: "Poppins",Sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 19px;
+    font-size: 20px;
+    line-height: 46px;
     margin-right: 5vh;
-    color: #323232 !important;
+    color: var(--floral-white) !important;
+    transition: ease  0.5s;
 }
 
-.nav-link:hover {
-    color:white !important;
-}
+    .nav-link:hover {
+        color: var(--flame) !important;
+        border-bottom: solid 1px;
+    }
 
-.logo {
+.headerContainer {
     position: relative;
-    width: 42px;
-    height: 42px;
-    margin-right: 5vh;
-    background: #323232;
-    border-radius: 6px;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 24px;
-    color: White;
 }
+
+.personalLogo {
+    position: relative;
+    width: 160px;
+    padding-bottom:1vw;
+    height: auto;
+    margin-right: 5vw;
+}
+

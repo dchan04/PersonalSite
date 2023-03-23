@@ -1,9 +1,199 @@
-.aboutCounter {
+/* CSS HEX */
+
+.AboutContainer {
+    aspect-ratio: 16/9;
     position: relative;
-    width: auto;
-    min-width: 1800px;
+    min-width: 100%;
     max-width: 1920px;
-    min-height: 1080px;
-    background: #DDD0C8;
-    color: #323232;
+    min-height: 100vh;
+    max-height: 1080px;
+    padding-top:5vh;
+    --floral-white: #fffcf2ff;
+    --timberwolf: #ccc5b9ff;
+    --black-olive: #403d39ff;
+    --eerie-black: #252422ff;
+    --flame: #eb5e28ff;
+    background-image: url("./assets/background2.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #DDD0C8;
 }
+
+    .AboutContainer .Title {
+        position: relative;
+        height: auto;
+        font-family: "Poppins",Sans-serif;
+        font-weight: 600;
+        font-size: 75px;
+        line-height: 1.4em;
+        color: var(--flame);
+    }
+
+    .AboutContainer .Description {
+        position: absolute;
+        left: 15%;
+        top: 20vh;
+        height: auto;
+        width: auto;
+        font-family: "Poppins",Sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5vw;
+        line-height: 54px;
+        text-align: left;
+        color: var(--floral-white);
+    }
+
+    .AboutContainer .skillContainer {
+        position: absolute;
+        width: 40vw;
+        height: 60vh;
+        left: 45vw;
+        top: 15vw;
+        float: right;
+        background: #171A1B;
+        opacity: 0.8;
+        border: 1px solid #4A4A4A;
+        border-radius: 15px 15px 15px 15px;
+    }
+
+    .AboutContainer .redButton {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        left: 24px;
+        top: 11px;
+        background: #FF5F56;
+        border-radius: 50%;
+    }
+
+    .AboutContainer .yellowButton {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        left: 40px;
+        top: 11px;
+        background: #FFBD2E;
+        border-radius: 50%;
+    }
+
+    .AboutContainer .greenButton {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        left: 56px;
+        top: 11px;
+        background: #27C93F;
+        border-radius: 50%;
+    }
+
+    .AboutContainer .skillContainer .url {
+        position: absolute;
+        width: 40%;
+        height: 14px;
+        left: 30%;
+        top: 8px;
+        background: #202226;
+        opacity: 0.9;
+        border-radius: 5px;
+        color: white;
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.65vw;
+        line-height: 18px;
+        letter-spacing: -0.015em;
+        color: #FFFFFF;
+    }
+
+    .AboutContainer .skillContainer .skillsCategory {
+        position: absolute;
+        min-width: 600px;
+        min-height: 116px;
+        height: auto;
+        width: auto;
+        left: 15%;
+        top: 15%;
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2vw;
+        line-height: 18px;
+        text-align:center;
+        /* or 112% */
+
+        letter-spacing: -0.015em;
+        color: #FFFFFF;
+    }
+
+    .AboutContainer .educationCategory {
+        position: absolute;
+        min-width: 190px;
+        min-height: 116px;
+        height: auto;
+        width: auto;
+        left: 15%;
+        top: 55%;
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2vw;
+        line-height: 18px;
+        /* or 112% */
+
+        letter-spacing: -0.015em;
+        color: #FFFFFF;
+    }
+
+    .AboutContainer .purpleText {
+        position: relative;
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2vw;
+        line-height: 24px;
+        /* or 112% */
+        color: #0094ff;
+        float: left;
+    }
+
+    .AboutContainer .firstBracket {
+        position: relative;
+        float: left;
+        padding-left: 2em;
+        color: white;
+    }
+
+
+    .AboutContainer .endBracket {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+    }
+
+    .AboutContainer .category {
+        position: relative;
+        clear: left;
+        padding: 1em 0em 1em 4em;
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.85vw;
+        line-height: 24px;
+        text-align: start;
+        /* or 112% */
+        letter-spacing: -0.015em;
+        color: #0EE6B7;
+    }
+
+    .AboutContainer .categoryText {
+        padding-left: 0.5em;
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-size: 0.85vw;
+        line-height: 24px;
+        text-align: start;
+        letter-spacing: 0.025em;
+        color: white;
+    }
