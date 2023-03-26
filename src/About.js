@@ -1,11 +1,24 @@
-import "./About.css"
+import "./About.css";
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 function About() {
+    const ref = useRef(null)
+    const isInView = useInView(ref, { once: true })
     return (
         <div className="AboutContainer">
-            <div className="Title">
-                About Me
-            </div>
+            <motion.div
+                className="Title"
+                ref={ref}
+                style={{
+                    transform: isInView ? "translateZ(0) translateY(0)" : "translateZ(-700px) translateY(500px)",
+                    opacity: isInView ? 1 : 0,
+                    transition: "all 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s"
+                }}>
+                <motion.span>
+                    About Me
+                </motion.span>
+            </motion.div>
             <div className="Description">
             filler
             </div>

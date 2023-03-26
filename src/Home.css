@@ -1,3 +1,4 @@
+
 .HomeContainer {
     aspect-ratio: 16/9;
     position: relative;
@@ -16,7 +17,7 @@
     background-size: cover;
     color: var(--floral-white);
 }
-
+    /** * ---------------------------------------- * Main home container * ---------------------------------------- */
     .HomeContainer .introContainer {
         position: relative;
         width: auto;
@@ -97,6 +98,8 @@
     animation-delay: 3s;
 }
 
+/** * ---------------------------------------- * Social link container * ---------------------------------------- */
+
 .social-btn {
     cursor: pointer;
     height: 50px;
@@ -148,7 +151,7 @@
 #github {
     fill: #333;
 }
-/** * ---------------------------------------- * animations * ---------------------------------------- */
+/** * ---------------------------------------- * animations and keyframes * ---------------------------------------- */
 @-webkit-keyframes focus-in-expand-fwd {
     0% {
         letter-spacing: -0.5em;
@@ -192,11 +195,11 @@
         opacity: 0;
     }
 
-    20% {
-        opacity: 1;
+    35% {
+        opacity: 0.8;
     }
 
-    80% {
+    70% {
         opacity: 1;
     }
 
