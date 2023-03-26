@@ -9,8 +9,10 @@ function HomePage() {
     return (
         <div className="HomeContainer">
             <div className="introContainer">
-                <div className="intro">Hello, My Name is Darren.</div>
-                <div className="description">I'm a Software Developer from Canada. I have a passion for all things technology and design, from Software Engineering to UI/UX.</div>
+                <div className="intro">Hello<div className="delayedText"><span className="intro2">, My Name is Darren</span></div></div>
+                <div className="description">
+                        I'm a Software Developer from Canada. I have a passion for all things technology and design, from Software Engineering to UI/UX.
+                </div>
                 <div className="picContainer">
                     <Image className="dcAvatar" src={avatar}></Image>
                     

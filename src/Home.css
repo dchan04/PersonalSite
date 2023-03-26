@@ -21,8 +21,8 @@
         position: relative;
         width: auto;
         height: auto;
-        justify-content:center;
-        align-content:center;
+        justify-content: center;
+        align-content: center;
         top: 20vh;
     }
 
@@ -34,7 +34,25 @@
         font-size: 75px;
         line-height: 1.4em;
         color: var(--flame);
+        animation: showup 7s;
     }
+
+        .HomeContainer .intro .delayedText {
+            display: inline-block;
+            white-space: nowrap;
+            animation: reveal 7s;
+        }
+
+        .HomeContainer .intro .intro2 {
+            position: relative;
+            height: auto;
+            font-family: "Poppins",Sans-serif;
+            font-weight: 600;
+            font-size: 75px;
+            line-height: 1.4em;
+            color: var(--flame);
+            animation: slidein 7s;
+        }
 
     .HomeContainer .description {
         position: relative;
@@ -49,8 +67,8 @@
         font-size: 22px;
         text-align: center;
         color: var(--floral-white);
+        animation: reveal 7s;
     }
-
 
     .HomeContainer .introContainer .picContainer {
         position: relative;
@@ -58,6 +76,9 @@
         width: 60%;
         margin-left: auto;
         margin-right: auto;
+        -webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation-delay: 3s;
     }
 
         .HomeContainer .introContainer .picContainer .dcAvatar {
@@ -65,54 +86,15 @@
             width: 300px;
             height: auto;
         }
-        .HomeContainer .introContainer .picContainer .waveHand {
-            position: absolute;
-            left: 55%;
-            top: 65%;
-            transform: scaleX(-1);
-            width: 90px;
-            height: auto;
-        }
-
-    .HomeContainer .leftImage {
-        position: absolute;
-        height: auto;
-        width: auto;
-        float: left;
-        bottom: 5px;
-    }
-        .HomeContainer .leftImage .homePic1 {
-            height: 250px;
-            min-height: 100px;
-            width: auto;
-        }
-    .HomeContainer .rightImage {
-        position: absolute;
-        height: auto;
-        width: auto;
-        bottom:5px;
-        right: 10%;
-    }
-
-        .HomeContainer .rightImage .homePic2 {
-            position: relative;
-            height: 250px;
-            width: auto;
-        }
-
-        .HomeContainer .rightImage .codeGif {
-            position: absolute;
-            height: 194px;
-            width: 375px;
-            padding-top: 10px;
-            padding-left: 82px;
-        }
 
 .social-links, .flex-center {
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
+    -webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 3s;
 }
 
 .social-btn {
@@ -165,4 +147,102 @@
 
 #github {
     fill: #333;
+}
+/** * ---------------------------------------- * animations * ---------------------------------------- */
+@-webkit-keyframes focus-in-expand-fwd {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-800px);
+        transform: translateZ(-800px);
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes focus-in-expand-fwd {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-800px);
+        transform: translateZ(-800px);
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -60vw;
+    }
+
+    20% {
+        margin-left: -60vw;
+    }
+
+    35% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+
+    20% {
+        opacity: 0;
+        width: 0px;
+    }
+
+    30% {
+        width: auto;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        width: auto;
+    }
 }
