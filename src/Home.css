@@ -1,251 +1,231 @@
-
 .HomeContainer {
-    aspect-ratio: 16/9;
-    position: relative;
-    min-width: 100%;
-    max-width: 1920px;
-    min-height: 100vh;
-    max-height: 1080px;
-    --floral-white: #fffcf2ff;
-    --timberwolf: #ccc5b9ff;
-    --black-olive: #403d39ff;
-    --eerie-black: #252422ff;
-    --flame: #eb5e28ff;
-    background-image: url("./assets/background1.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    color: var(--floral-white);
+  aspect-ratio: 16/9;
+  position: relative;
+  min-width: 100vw;
+  min-height: 100vh;
+  --floral-white: #fffcf2ff;
+  --timberwolf: #ccc5b9ff;
+  --black-olive: #403d39ff;
+  --eerie-black: #252422ff;
+  --flame: #eb5e28ff;
+  background-image: url("./assets/background1.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: var(--floral-white);
 }
-    /** * ---------------------------------------- * Main home container * ---------------------------------------- */
-    .HomeContainer .introContainer {
-        position: relative;
-        width: auto;
-        height: auto;
-        justify-content: center;
-        align-content: center;
-        top: 20vh;
-    }
-
-    .HomeContainer .intro {
-        position: relative;
-        height: auto;
-        font-family: "Poppins",Sans-serif;
-        font-weight: 600;
-        font-size: 75px;
-        line-height: 1.4em;
-        color: var(--flame);
-        animation: showup 7s;
-    }
-
-        .HomeContainer .intro .delayedText {
-            display: inline-block;
-            white-space: nowrap;
-            animation: reveal 7s;
-        }
-
-        .HomeContainer .intro .intro2 {
-            position: relative;
-            height: auto;
-            font-family: "Poppins",Sans-serif;
-            font-weight: 600;
-            font-size: 75px;
-            line-height: 1.4em;
-            color: var(--flame);
-            animation: slidein 7s;
-        }
-
-    .HomeContainer .description {
-        position: relative;
-        min-width: auto;
-        max-width: 95vh;
-        min-height: 90px;
-        padding-left: 10vh;
-        padding-right: 10vh;
-        margin-left: auto;
-        margin-right: auto;
-        font-family: "Poppins",Sans-serif;
-        font-size: 22px;
-        text-align: center;
-        color: var(--floral-white);
-        animation: reveal 7s;
-    }
-
-    .HomeContainer .introContainer .picContainer {
-        position: relative;
-        display: block;
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-        -webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation-delay: 3s;
-    }
-
-        .HomeContainer .introContainer .picContainer .dcAvatar {
-            position: relative;
-            width: 300px;
-            height: auto;
-        }
-
-.social-links, .flex-center {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    -webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation-delay: 3s;
+/** * ---------------------------------------- * Main home container * ---------------------------------------- */
+.HomeContainer .introContainer {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  top: 20vh;
 }
-
+.HomeContainer .intro {
+  position: relative;
+  height: auto;
+  width: auto;
+  font-family: "Poppins", Sans-serif;
+  font-weight: 600;
+  font-size: clamp(1vw, 4vw, 10vw);
+  line-height: 1.4em;
+  color: var(--flame);
+  animation: showup 7s;
+}
+.HomeContainer .intro .delayedText {
+  display: inline-block;
+  white-space: nowrap;
+  animation: reveal 7s;
+}
+.HomeContainer .intro .intro2 {
+  position: relative;
+  height: auto;
+  font-family: "Poppins", Sans-serif;
+  font-weight: 600;
+  font-size: clamp(2vw, 4vw, 6vw);
+  line-height: 1.4em;
+  color: var(--flame);
+  animation: slidein 7s;
+}
+.HomeContainer .description {
+  position: relative;
+  min-width: auto;
+  max-width: 95vh;
+  min-height: 90px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Poppins", Sans-serif;
+  font-size: clamp(16px, 1.2vw, 1.6vw);
+  text-align: center;
+  color: var(--floral-white);
+  animation: reveal 7s;
+}
+.HomeContainer .introContainer .picContainer {
+  position: relative;
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-animation: focus-in-expand-fwd 0.8scubic-bezier(
+      0.25,
+      0.46,
+      0.45,
+      0.94
+    )
+    both;
+  animation: focus-in-expand-fwd 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 3s;
+}
+.HomeContainer .introContainer .picContainer .dcAvatar {
+  position: relative;
+  width: 300px;
+  height: auto;
+}
+.social-links,
+.flex-center {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: focus-in-expand-fwd 0.8scubic-bezier(
+      0.25,
+      0.46,
+      0.45,
+      0.94
+    )
+    both;
+  animation: focus-in-expand-fwd 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 3s;
+}
 /** * ---------------------------------------- * Social link container * ---------------------------------------- */
-
 .social-btn {
-    cursor: pointer;
-    height: 50px;
-    width: 50px;
-    font-family: "Poppins",Sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    color: #333;
-    border-radius: 10px;
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
-    background: var(--floral-white);
-    margin: 5px;
-    transition: 0.5s;
-    justify-content: center;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  font-family: "Poppins", Sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--eerie-black);
+  border-radius: 10px;
+  box-shadow: 2px 2px 0px 0px rgba(235, 94, 40, 1);
+  border: 1px solid var(--eerie-black);
+  background-color: var(--floral-white);
+  margin: 20px;
+  transition: 0.5s;
+  justify-content: center;
 }
-
-    .social-btn img {
-        height: 30px;
-        width: 30px;
-    }
-
-    .social-btn span {
-        width: 0px;
-        overflow: hidden;
-        transition: 0.3s;
-        text-align: center;
-        margin-left: 2px;
-    }
-
-    .social-btn:hover {
-        width: 150px;
-        border-radius: 5px;
-    }
-
-        .social-btn:hover span {
-            padding: 2px;
-            width: 80px;
-        }
-
+.social-btn img {
+  height: 30px;
+  width: 30px;
+}
+.social-btn span {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: center;
+  margin-left: 2px;
+}
+.social-btn:hover {
+  width: 150px;
+  border-radius: 5px;
+}
+.social-btn:hover span {
+  padding: 2px;
+  width: 80px;
+}
 #resume svg {
-    fill: #1da1f2;
+  fill: #1da1f2;
 }
-
 #linkedin svg {
-    fill: #0e76a8;
+  fill: #0e76a8;
 }
-
 #github {
-    fill: #333;
+  fill: #333;
 }
 /** * ---------------------------------------- * animations and keyframes * ---------------------------------------- */
 @-webkit-keyframes focus-in-expand-fwd {
-    0% {
-        letter-spacing: -0.5em;
-        -webkit-transform: translateZ(-800px);
-        transform: translateZ(-800px);
-        -webkit-filter: blur(12px);
-        filter: blur(12px);
-        opacity: 0;
-    }
-
-    100% {
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-        -webkit-filter: blur(0);
-        filter: blur(0);
-        opacity: 1;
-    }
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+    transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
 }
-
 @keyframes focus-in-expand-fwd {
-    0% {
-        letter-spacing: -0.5em;
-        -webkit-transform: translateZ(-800px);
-        transform: translateZ(-800px);
-        -webkit-filter: blur(12px);
-        filter: blur(12px);
-        opacity: 0;
-    }
-
-    100% {
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-        -webkit-filter: blur(0);
-        filter: blur(0);
-        opacity: 1;
-    }
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+    transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
 }
-
 @keyframes showup {
-    0% {
-        opacity: 0;
-    }
-
-    35% {
-        opacity: 0.8;
-    }
-
-    70% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0.8;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 @keyframes slidein {
-    0% {
-        margin-left: -60vw;
-    }
-
-    20% {
-        margin-left: -60vw;
-    }
-
-    35% {
-        margin-left: 0px;
-    }
-
-    100% {
-        margin-left: 0px;
-    }
+  0% {
+    margin-left: -60vw;
+  }
+  20% {
+    margin-left: -60vw;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
 }
-
 @keyframes reveal {
-    0% {
-        opacity: 0;
-        width: 0px;
-    }
-
-    20% {
-        opacity: 0;
-        width: 0px;
-    }
-
-    30% {
-        width: auto;
-    }
-
-    80% {
-        opacity: 1;
-    }
-
-    100% {
-        width: auto;
-    }
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 0;
+    width: 0px;
+  }
+  30% {
+    width: auto;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    width: auto;
+  }
 }
