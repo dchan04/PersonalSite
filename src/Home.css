@@ -1,17 +1,17 @@
 .HomeContainer {
-  aspect-ratio: 16/9;
-  position: relative;
-  min-width: 100vw;
-  min-height: 100vh;
   --floral-white: #fffcf2ff;
   --timberwolf: #ccc5b9ff;
   --black-olive: #403d39ff;
   --eerie-black: #252422ff;
   --flame: #eb5e28ff;
-  background-image: url("./assets/background1.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  aspect-ratio: 16/9;
+  position: relative;
+  min-width: 100vw;
+  height: 100vh;
+  min-height: 720px;
+  font-family: "Poppins", Sans-serif;
+  font-style: normal;
+  font-weight: 400;
   color: var(--floral-white);
 }
 /** * ---------------------------------------- * Main home container * ---------------------------------------- */
@@ -27,11 +27,9 @@
   position: relative;
   height: auto;
   width: auto;
-  font-family: "Poppins", Sans-serif;
-  font-weight: 600;
   font-size: clamp(1vw, 4vw, 10vw);
-  line-height: 1.4em;
-  color: var(--flame);
+  line-height: 150%;
+  color: var(--floral-white);
   animation: showup 7s;
 }
 .HomeContainer .intro .delayedText {
@@ -42,12 +40,13 @@
 .HomeContainer .intro .intro2 {
   position: relative;
   height: auto;
-  font-family: "Poppins", Sans-serif;
-  font-weight: 600;
   font-size: clamp(2vw, 4vw, 6vw);
-  line-height: 1.4em;
-  color: var(--flame);
+  color: var(--floral-white);
   animation: slidein 7s;
+}
+
+.HomeContainer .intro .intro2 #name {
+  color: var(--flame);
 }
 .HomeContainer .description {
   position: relative;
@@ -58,27 +57,22 @@
   padding-right: 5vw;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Poppins", Sans-serif;
   font-size: clamp(16px, 1.2vw, 1.6vw);
   text-align: center;
+  overflow: hidden;
+  line-height: 150%;
   color: var(--floral-white);
   animation: reveal 7s;
 }
+
 .HomeContainer .introContainer .picContainer {
   position: relative;
   display: block;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-  -webkit-animation: focus-in-expand-fwd 0.8scubic-bezier(
-      0.25,
-      0.46,
-      0.45,
-      0.94
-    )
-    both;
   animation: focus-in-expand-fwd 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 3s;
+  animation-delay: 2.5s;
 }
 .HomeContainer .introContainer .picContainer .dcAvatar {
   position: relative;
@@ -91,13 +85,6 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  -webkit-animation: focus-in-expand-fwd 0.8scubic-bezier(
-      0.25,
-      0.46,
-      0.45,
-      0.94
-    )
-    both;
   animation: focus-in-expand-fwd 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-delay: 3s;
 }

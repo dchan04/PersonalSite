@@ -1,7 +1,6 @@
 import "./About.css";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Button } from "react-bootstrap";
 
 function About() {
   const ref = useRef(null);
@@ -9,7 +8,7 @@ function About() {
   return (
     <div className="AboutContainer">
       <motion.div
-        className="Title"
+        className="title"
         ref={ref}
         style={{
           transform: isInView
@@ -92,20 +91,6 @@ function About() {
             Others =<span className="categoryText">Git;</span>{" "}
           </div>
           <p className="endBracket">{`}`}</p>
-        </div>
-        <div className="educationCategory">
-          <div className="purpleText">Education</div>
-          <div className="firstBracket">{`{`}</div>
-          <div className="category">
-            Degree =<span className="categoryText">Bachelor of Computing;</span>
-          </div>
-          <div className="category">
-            Major =<span className="categoryText">Computer Science;</span>
-          </div>
-          <div className="category">
-            Minor =<span className="categoryText">Business Economics;</span>
-          </div>
-          <div className="endBracket">{`}`}</div>
         </div>
       </motion.div>
     </div>

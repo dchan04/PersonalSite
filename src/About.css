@@ -1,31 +1,33 @@
 .AboutContainer {
-  aspect-ratio: 16/9;
-  position: relative;
-  min-width: 100vw;
-  min-height: 100vh;
-  max-height: 1080px;
-  padding-top: 5vh;
   --floral-white: #fffcf2ff;
   --timberwolf: #ccc5b9ff;
   --black-olive: #403d39ff;
   --eerie-black: #252422ff;
   --flame: #eb5e28ff;
-  background-image: url("./assets/background2.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  color: #ddd0c8;
+  aspect-ratio: 16/9;
+  position: relative;
+  width: 100vw;
+  min-width: 768px;
+  height: 100vh;
+  min-height: 480px;
+  padding-top: 5vh;
+  font-family: "Poppins", Sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--floral-white);
 }
-.AboutContainer .Title {
+.AboutContainer .title {
   position: relative;
   height: auto;
-  font-family: "Poppins", Sans-serif;
-  font-weight: 600;
-  font-size: 75px;
-  line-height: 1.4em;
-  color: var(--flame);
+  width: 100vw;
+  font-size: clamp(1vw, 4vw, 10vw);
+  font-weight: 400;
+  line-height: 150%;
+  text-align: center;
+  color: var(--floral-white);
 }
-.AboutContainer .Title::after {
+.AboutContainer .title::after {
   content: "";
   position: absolute;
   top: calc(100% + 1vh);
@@ -41,11 +43,9 @@
   top: 27vh;
   left: 15vw;
   height: auto;
-  max-width: 30vw;
-  font-family: "Poppins", Sans-serif;
-  font-style: normal;
+  width: 30vw;
   font-size: clamp(12px, 1.1vw, 22px);
-  line-height: 1.7;
+  line-height: 150%;
   text-align: left;
   color: var(--floral-white);
 }
@@ -98,11 +98,9 @@
   opacity: 0.9;
   border-radius: 5px;
   color: #ffffff;
-  font-family: "Fira Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.65vw;
-  line-height: 18px;
+
+  font-size: 0.5vw;
+  line-height: 150%;
   letter-spacing: -0.015em;
   color: #ffffff;
 }
@@ -111,40 +109,19 @@
   height: auto;
   width: auto;
   left: 10%;
-  top: 20%;
-  font-family: "Poppins", Sans-serif;
+  top: 15%;
   font-size: clamp(8px, 1vw, 24px);
-  line-height: 1.1em;
+  line-height: 150%;
   text-align: center;
   /* or 112% */
   letter-spacing: -0.015em;
   color: #ffffff;
 }
-.AboutContainer .educationCategory {
-  display: none;
-  position: absolute;
-  min-width: 190px;
-  min-height: 116px;
-  height: auto;
-  width: auto;
-  left: 15%;
-  top: 55%;
-  font-family: "Fira Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.2vw;
-  line-height: 1.4em;
-  /* or 112% */
-  letter-spacing: -0.015em;
-  color: #ffffff;
-}
+
 .AboutContainer .purpleText {
   position: relative;
-  font-family: "Poppins", Sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: clamp(8px, 1.2vw, 24px);
-  line-height: 24px;
+  line-height: 150%;
   /* or 112% */
   color: #0094ff;
   float: left;
@@ -164,11 +141,8 @@
   position: relative;
   clear: left;
   padding: 1em 0em 1em 3em;
-  font-family: "Poppins", Sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: clamp(8px, 1vw, 24px);
-  line-height: 1.1em;
+  line-height: 100%;
   text-align: start;
   /* or 112% */
   letter-spacing: -0.015em;
@@ -176,10 +150,8 @@
 }
 .AboutContainer .categoryText {
   padding-left: 2%;
-  font-family: "Poppins", Sans-serif;
-  font-style: normal;
-  font-size: clamp(8px, 1vw, 24px);
-  line-height: 1.1em;
+  font-size: clamp(8px, 0.9vw, 24px);
+  line-height: 150%;
   text-align: start;
   letter-spacing: 0.025em;
   color: #ffffff;
@@ -188,7 +160,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: 1;
+  line-height: 100%;
   text-decoration: none;
   color: var(--floral-white);
   font-size: 18px;
@@ -201,7 +173,7 @@
   box-shadow: 3px 3px 0px 0px rgba(235, 94, 40, 1);
   background-color: var(--eerie-black);
 }
-.contact-button::hover {
+.contact-button:hover {
   box-shadow: 0 0 var(--black-olive);
   color: #fff;
   background-color: var(--black-olive);
