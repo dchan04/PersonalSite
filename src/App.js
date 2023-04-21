@@ -1,24 +1,14 @@
 import "./App.css";
-import HeaderComponent from "./Header";
-import Home from "./Home";
-import AboutMe from "./About";
-import Projects from "./Projects";
+import AnimatedBg from "./components/AnimatedBg";
+import HeaderComponent from "./components/Header";
+import Home from "./components/Home";
+import AboutMe from "./components/About";
+import Projects from "./components/Projects";
 
 function App() {
   return (
     <div className="App">
-      <ul className="background">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+      <AnimatedBg />
       <HeaderComponent />
       <Home />
       <AboutMe />
