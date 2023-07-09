@@ -2,8 +2,12 @@
 
 # dependencies
 /node_modules
+/build
+/obj
+.vs
 /.pnp
 .pnp.js
+.git
 
 # testing
 /coverage

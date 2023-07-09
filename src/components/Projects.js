@@ -90,14 +90,15 @@ function Projects() {
             <div className="project-pic"></div>
             <div className="project-name">Personal Website</div>
             <div className="project-description">
-              Want to see how my personal website was developed?
+              My personal website I made to showcase more than what is on my
+              resume.
             </div>
             <div className="project-techstack">
               <span>React.js</span>
               <span>Bootstrap 5</span>
+              <span>Framer Motion</span>
             </div>
             <div className="project-links">
-              <button>Live Demo</button>
               <button>Git</button>
             </div>
           </Card>
