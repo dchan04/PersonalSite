@@ -1,0 +1,80 @@
+.ContactContainer {
+	--floral-white: #fffcf2ff;
+	--timberwolf: #ccc5b9ff;
+	--black-olive: #403d39ff;
+	--eerie-black: #252422ff;
+	--flame: #eb5e28ff;
+	position: relative;
+	min-width: 100vw;
+	height: 100vh;
+	max-height: 1080px;
+	font-family: "Poppins", Sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+
+	color: var(--floral-white);
+}
+
+.ContactContainer .contact-form {
+	height: 60vh;
+	min-height: 520px;
+	width: 50vw;
+	margin: 5rem auto 0 auto;
+	padding: 25px 50px 25px 50px;
+	background-color: var(--black-olive);
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	border-radius: 5px;
+}
+
+.ContactContainer .form-label {
+	display: block;
+	text-align: left;
+}
+
+.ContactContainer .title {
+	position: relative;
+	height: auto;
+	width: 100vw;
+	font-size: clamp(1vw, 4vw, 10vw);
+	font-weight: 400;
+	line-height: 150%;
+	text-align: center;
+	color: var(--floral-white);
+}
+
+.ContactContainer .title::after {
+	content: "";
+	position: absolute;
+	top: calc(100% + 1vh);
+	height: 5px;
+	width: 4vw;
+	background: var(--flame);
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 5px;
+}
+.ContactContainer .btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	float: right;
+	line-height: 100%;
+	text-decoration: none;
+	color: var(--floral-white);
+	font-size: 18px;
+	border-radius: 5px;
+	width: 10vw;
+	height: 5vh;
+	font-weight: bold;
+	border: 2px solid var(--floral-white);
+	transition: 0.3s;
+	box-shadow: 3px 3px 0px 0px rgba(235, 94, 40, 1);
+	background-color: var(--eerie-black);
+}
+.ContactContainer .btn:hover {
+	box-shadow: 0 0 var(--black-olive);
+	color: #fff;
+	background-color: var(--black-olive);
+	outline: none;
+}
