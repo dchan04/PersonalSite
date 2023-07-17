@@ -41,18 +41,13 @@
 /* Project container */
 .projects-container .main-container {
 	margin: 5rem auto 0 auto;
-	width: 75vw;
-	height: 75vh;
+	width: 75%;
+	height: 65%;
 }
 
 .projects-container .card-container {
 	position: relative;
-	min-width: 150px;
-	width: 20vw;
-	min-height: 200px;
-	height: 50vh;
 	padding: 5px;
-	float: left;
 }
 .projects-container .project-card1,
 .project-card2,

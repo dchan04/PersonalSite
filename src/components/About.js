@@ -33,23 +33,33 @@ function About() {
 				}}
 			>
 				<p>
-					Hello, my name is Darren Chan. I completed my Bachelor of
-					Computing at University of Guelph, Majoring in Computer
-					Science and Minoring in Business Economics.
+					Hello, I'm Darren Chan, a highly motivated and
+					results-oriented professional. I graduated from the
+					University of Guelph with a Bachelor of Computing,
+					specializing in Computer Science and minoring in Business
+					Economics.
 				</p>
 
 				<p>
-					After University, I began leaning more towards Web
-					Development. This interest led me to learning{" "}
+					Throughout my academic journey, my passion for web
+					development took center stage, driving me to delve deeper
+					into this field. I have acquired strong proficiency in{" "}
 					<span id="reactLogoColor">React.js</span> for front-end
-					development and <span id="aspLogoColor">ASP.NET</span> for
-					back-end development.
+					development, enabling me to create interactive and visually
+					appealing user interfaces. Additionally, I have honed my
+					skills in <span id="aspLogoColor">ASP.NET</span> for
+					back-end development, empowering me to build robust and
+					scalable server-side functionalities.
 				</p>
 
 				<p>
-					I'm open to all Job opportunities where I can contribute,
-					learn and grow. If you think you have an opportunity that I
-					would be best suited for, feel free to contact me!
+					I am currently seeking new job opportunities where I can
+					apply my expertise, contribute to exciting projects, and
+					further expand my skill set. I possess a strong eagerness to
+					learn and grow in a dynamic professional environment. If you
+					believe that you have an opportunity that aligns with my
+					skill set and ambitions, I would be delighted to connect
+					with you. Please feel free to reach out to me!
 				</p>
 				<div>
 					<Button

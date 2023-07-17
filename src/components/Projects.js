@@ -41,9 +41,15 @@ function Projects() {
 							Little Legends Tracker
 						</div>
 						<div className="project-description">
-							Based around a game called Teamfight Tactics. The
-							goal of this project is to provide simple statistics
-							on "Little Legend" pick rates.
+							The Little Legend Statistics project revolves around
+							the popular game called Teamfight Tactics. Its
+							primary objective is to offer straightforward and
+							comprehensive statistics on Little Legend pick
+							rates. By analyzing data from the game, this project
+							aims to provide valuable insights into the frequency
+							at which different Little Legends are chosen by
+							players, helping players make informed decisions on
+							which Little Legend to obtain next.
 						</div>
 						<div className="project-techstack">
 							<span>React.js</span>
@@ -77,7 +83,12 @@ function Projects() {
 					<Card className="project-card2">
 						<div className="project-pic"></div>
 						<div className="project-name">ChatGPT Clone</div>
-						<div className="project-description">*Description*</div>
+						<div className="project-description">
+							This project explores the capabilities of AI's
+							potential in Web applications. By simply sending a
+							message, you'll experience the power of intelligent
+							AI-generated responses tailored to your input.
+						</div>
 						<div className="project-techstack">
 							<span>React.js</span>
 							<span>.NET 7</span>
@@ -117,9 +128,9 @@ function Projects() {
 							Bionic Text Converter
 						</div>
 						<div className="project-description">
-							A simple bionic text converter that can take a file
-							(pdf, txt, docx), extract the text, and convert it
-							into bionic text.
+							The Bionic Text Converter is a user-friendly tool
+							that extracts text from PDF, TXT, and DOCX files and
+							converts it into interactive bionic text.
 						</div>
 						<div className="project-techstack">
 							<span>React.js</span>

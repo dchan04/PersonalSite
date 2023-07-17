@@ -1,0 +1,26 @@
+.page-footer {
+	--floral-white: #fffcf2ff;
+	--timberwolf: #ccc5b9ff;
+	--black-olive: #403d39ff;
+	--eerie-black: #252422ff;
+	--flame: #eb5e28ff;
+	position: relative;
+	width: 100%;
+	margin: auto;
+	height: auto;
+	max-height: 1080px;
+	font-family: "Poppins", Sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+	color: var(--floral-white);
+	background-color: var(--eerie-black);
+}
+
+.footer-container {
+	width: 80%;
+}
+
+.footer-copyright {
+	border-top: 2px solid var(--flame);
+}

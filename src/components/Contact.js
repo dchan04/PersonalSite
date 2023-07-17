@@ -42,28 +42,45 @@ function Contact() {
 			>
 				<motion.p>Contact</motion.p>
 			</motion.div>
-			<Form className="contact-form">
-				<Form.Group className="mb-3" controlId="formBasic">
-					<Form.Label>Name</Form.Label>
-					<Form.Control type="text" placeholder="Enter Your Name" />
-				</Form.Group>
+			<motion.div
+				style={{
+					transform: isInView
+						? "translateZ(0) translateY(0)"
+						: "translateZ(-700px) translateY(200px)",
+					opacity: isInView ? 1 : 0,
+					transition:
+						"all 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s",
+				}}
+			>
+				<Form className="contact-form">
+					<Form.Group className="mb-3" controlId="formBasic">
+						<Form.Label>Name</Form.Label>
+						<Form.Control
+							type="text"
+							placeholder="Enter Your Name"
+						/>
+					</Form.Group>
 
-				<Form.Group className="mb-3" controlId="formBasicEmail">
-					<Form.Label>Email</Form.Label>
-					<Form.Control type="email" placeholder="Enter Your Email" />
-				</Form.Group>
-				<Form.Group className="mb-4" controlId="formBasic">
-					<Form.Label>Message</Form.Label>
-					<Form.Control
-						as="textarea"
-						rows={8}
-						placeholder="Enter Your Message"
-					/>
-				</Form.Group>
-				<Button variant="primary" type="submit">
-					Submit
-				</Button>
-			</Form>
+					<Form.Group className="mb-3" controlId="formBasicEmail">
+						<Form.Label>Email</Form.Label>
+						<Form.Control
+							type="email"
+							placeholder="Enter Your Email"
+						/>
+					</Form.Group>
+					<Form.Group className="mb-4" controlId="formBasic">
+						<Form.Label>Message</Form.Label>
+						<Form.Control
+							as="textarea"
+							rows={8}
+							placeholder="Enter Your Message"
+						/>
+					</Form.Group>
+					<Button variant="primary" type="submit">
+						Submit
+					</Button>
+				</Form>
+			</motion.div>
 		</div>
 	);
 }
