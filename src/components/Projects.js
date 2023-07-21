@@ -48,8 +48,8 @@ function Projects() {
 							rates. By analyzing data from the game, this project
 							aims to provide valuable insights into the frequency
 							at which different Little Legends are chosen by
-							players, helping players make informed decisions on
-							which Little Legend to obtain next.
+							players, helping players make decisions on which
+							Little Legend to purchase next.
 						</div>
 						<div className="project-techstack">
 							<span>React.js</span>
@@ -57,6 +57,7 @@ function Projects() {
 							<span>C#</span>
 							<span>MUI</span>
 							<span>Docker</span>
+							<span>Bootstrap</span>
 						</div>
 						<div className="project-links">
 							<Button>Live Demo</Button>
@@ -93,6 +94,7 @@ function Projects() {
 							<span>React.js</span>
 							<span>.NET 7</span>
 							<span>C#</span>
+							<span>Bootstrap</span>
 							<span>Docker</span>
 						</div>
 						<div className="project-links">
@@ -135,7 +137,8 @@ function Projects() {
 						<div className="project-techstack">
 							<span>React.js</span>
 							<span>.NET 7</span>
-							<span>react-bootstrap</span>
+							<span>Bootstrap</span>
+							<span>Docker</span>
 						</div>
 						<div className="project-links">
 							<Button

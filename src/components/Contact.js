@@ -2,6 +2,7 @@ import "./Contact.css";
 import React, { useState, useRef } from "react";
 import { Button, Form } from "react-bootstrap";
 import { motion, useInView } from "framer-motion";
+
 function Contact() {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true });
@@ -15,13 +16,16 @@ function Contact() {
 			email: email.value,
 			message: message.value,
 		};
-		let response = await fetch("http://localhost:5000/contact", {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json;charset=utf-8",
-			},
-			body: JSON.stringify(details),
-		});
+		let response = await fetch(
+			"https://dchan04mailbackend.onrender.com/contact",
+			{
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json;charset=utf-8",
+				},
+				body: JSON.stringify(details),
+			}
+		);
 		setStatus("Submit");
 		let result = await response.json();
 		alert(result.status);
@@ -52,23 +56,25 @@ function Contact() {
 						"all 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s",
 				}}
 			>
-				<Form className="contact-form">
-					<Form.Group className="mb-3" controlId="formBasic">
+				<Form className="contact-form" onSubmit={handleSubmit}>
+					<Form.Group className="mb-3" controlId="name">
 						<Form.Label>Name</Form.Label>
 						<Form.Control
+							as="input"
 							type="text"
 							placeholder="Enter Your Name"
 						/>
 					</Form.Group>
 
-					<Form.Group className="mb-3" controlId="formBasicEmail">
+					<Form.Group className="mb-3" controlId="email">
 						<Form.Label>Email</Form.Label>
 						<Form.Control
+							as="input"
 							type="email"
 							placeholder="Enter Your Email"
 						/>
 					</Form.Group>
-					<Form.Group className="mb-4" controlId="formBasic">
+					<Form.Group className="mb-4" controlId="message">
 						<Form.Label>Message</Form.Label>
 						<Form.Control
 							as="textarea"
@@ -77,7 +83,7 @@ function Contact() {
 						/>
 					</Form.Group>
 					<Button variant="primary" type="submit">
-						Submit
+						{status}
 					</Button>
 				</Form>
 			</motion.div>
