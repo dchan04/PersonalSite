@@ -61,17 +61,16 @@ function About() {
 					skill set and ambitions, I would be delighted to connect
 					with you. Please feel free to reach out to me!
 				</p>
-				<div>
-					<Button
-						href="mailto:darrenchan1123@gmail.com"
-						target="_blank"
-					>
-						Contact
-					</Button>
-				</div>
+				<Button
+					className="contactButton"
+					href="mailto:darrenchan1123@gmail.com"
+					target="_blank"
+				>
+					Contact
+				</Button>
 			</motion.div>
 			<motion.div
-				className="skillContainer"
+				className="skill-container"
 				style={{
 					transform: isInView
 						? "translateZ(0) translateY(0)"
@@ -81,36 +80,95 @@ function About() {
 						"all 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.4s",
 				}}
 			>
-				<div className="redButton" />
-				<div className="yellowButton" />
-				<div className="greenButton" />
-				<div className="url">DarrenChan.ca</div>
-				<div className="skillsCategory">
-					<div className="purpleText">Skills</div>
-					<div className="firstBracket">{`{`}</div>
-					<div className="category">
-						Languages =
-						<span className="categoryText">
-							HTML + CSS + JavaScript + C# + SQL;
-						</span>{" "}
-					</div>
-					<div className="category">
-						Frameworks =
-						<span className="categoryText">
-							React.JS + .Net Framework + Bootstrap + Node.js;
-						</span>{" "}
-					</div>
-					<div className="category">
-						Databases =
-						<span className="categoryText">
-							MySql + SQLite + MongoDB;
-						</span>{" "}
-					</div>
-					<div className="category">
-						Others =<span className="categoryText">Git;</span>{" "}
-					</div>
-					<p className="endBracket">{`}`}</p>
-				</div>
+				<h1 className="skill-title">Skills and Technologies</h1>
+				<ul className="skill-list">
+					<li className="skill-item">
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+							alt="html icon"
+						/>
+						<span>HTML5</span>
+					</li>
+					<li className="skill-item">
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+							alt="css icon"
+						/>
+
+						<span>CSS3</span>
+					</li>
+					<li className="skill-item">
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+							alt="javscript icon"
+						/>
+						<span>JavaScript</span>
+					</li>
+					<li className="skill-item">
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+							alt="C# icon"
+						/>
+						<span>C#</span>
+					</li>
+					<li className="skill-item">
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+							alt="react icon"
+						/>
+						<span>React.js</span>
+					</li>
+					<li className="skill-item">
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+							alt="node.js icon"
+						/>
+						<span>Node.js</span>
+					</li>
+					<li className="skill-item">
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+							alt="Asp.net icon"
+						/>
+						<span>ASP.NET</span>
+					</li>
+					<li className="skill-item">
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+							alt="vscode icon"
+						/>
+						<span>VS Code</span>
+					</li>
+					<li className="skill-item">
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+							alt="MySQL icon"
+						/>
+						<span>MySQL</span>
+					</li>
+					<li className="skill-item">
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+							alt="Bootstrap icon"
+						/>
+						<span>Bootstrap</span>
+					</li>
+					<li className="skill-item">
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+							alt="Docker icon"
+						/>
+						<span>Docker</span>
+					</li>
+					<li className="skill-item">
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+							alt="Git icon"
+						/>
+
+						<span>Github</span>
+					</li>
+				</ul>
 			</motion.div>
 		</div>
 	);

@@ -6,7 +6,8 @@
 	--flame: #eb5e28ff;
 	position: relative;
 	min-width: 100vw;
-	height: 100vh;
+	height: auto;
+	margin-top: 10vh;
 	max-height: 1080px;
 	font-family: "Poppins", Sans-serif;
 	font-style: normal;

@@ -8,9 +8,9 @@
 	position: relative;
 	width: 100vw;
 	min-width: 768px;
-	height: 100vh;
+	height: auto;
 	min-height: 480px;
-	padding-top: 5vh;
+	margin-top: 10vh;
 	font-family: "Poppins", Sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -49,11 +49,12 @@
 	text-align: left;
 	color: var(--floral-white);
 }
-.AboutContainer .skillContainer {
+.AboutContainer .skill-container {
 	position: absolute;
+	padding: 12px;
 	top: 27vh;
 	width: 35vw;
-	height: 50vh;
+	height: auto;
 	left: 50vw;
 	float: right;
 	background: var(--black-olive);
@@ -61,101 +62,34 @@
 	border: 1px solid #4a4a4a;
 	border-radius: 15px 15px 15px 15px;
 }
-.AboutContainer .redButton {
-	position: absolute;
-	width: 8px;
-	height: 8px;
-	left: 24px;
-	top: 11px;
-	background: #ff5f56;
-	border-radius: 50%;
+
+.skill-container .skill-title {
+	position: relative;
+	margin: 5px 5px 5px 5px;
+	font-size: 2vw;
+	width: 100%;
+	line-height: 150%;
+	text-align: left;
 }
-.AboutContainer .yellowButton {
-	position: absolute;
-	width: 8px;
-	height: 8px;
-	left: 40px;
-	top: 11px;
-	background: #ffbd2e;
-	border-radius: 50%;
+.skill-container .skill-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	padding: 0;
+	gap: 12px;
 }
-.AboutContainer .greenButton {
-	position: absolute;
-	width: 8px;
-	height: 8px;
-	left: 56px;
-	top: 11px;
-	background: #27c93f;
-	border-radius: 50%;
-}
-.AboutContainer .skillContainer .url {
-	position: absolute;
-	width: 40%;
-	height: 14px;
-	left: 30%;
-	top: 8px;
-	background: #202226;
-	opacity: 0.9;
+
+.skill-list .skill-item {
+	background-color: var(--eerie-black);
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 12px;
 	border-radius: 5px;
-	color: #ffffff;
-
-	font-size: 0.5vw;
-	line-height: 150%;
-	letter-spacing: -0.015em;
-	color: #ffffff;
 }
-.AboutContainer .skillContainer .skillsCategory {
-	position: absolute;
-	height: auto;
-	width: auto;
-	left: 10%;
-	top: 15%;
-	font-size: clamp(8px, 1vw, 24px);
-	line-height: 150%;
-	text-align: center;
-	/* or 112% */
-	letter-spacing: -0.015em;
-	color: #ffffff;
+.skill-list .skill-item img {
+	height: 30px;
 }
 
-.AboutContainer .purpleText {
-	position: relative;
-	font-size: clamp(8px, 1.2vw, 24px);
-	line-height: 150%;
-	/* or 112% */
-	color: #0094ff;
-	float: left;
-}
-.AboutContainer .firstBracket {
-	position: relative;
-	float: left;
-	padding-left: 2em;
-	color: #ffffff;
-}
-.AboutContainer .endBracket {
-	position: absolute;
-	top: 100%;
-	left: 0%;
-}
-.AboutContainer .category {
-	position: relative;
-	clear: left;
-	padding: 1em 0em 1em 3em;
-	font-size: clamp(8px, 1vw, 24px);
-	line-height: 100%;
-	text-align: start;
-	/* or 112% */
-	letter-spacing: -0.015em;
-	color: #0ee6b7;
-}
-.AboutContainer .categoryText {
-	padding-left: 2%;
-	font-size: clamp(8px, 0.9vw, 24px);
-	line-height: 150%;
-	text-align: start;
-	letter-spacing: 0.025em;
-	color: #ffffff;
-}
 .AboutContainer .btn {
 	display: flex;
 	align-items: center;

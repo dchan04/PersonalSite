@@ -6,9 +6,9 @@
 	--flame: #eb5e28ff;
 	aspect-ratio: 16/9;
 	position: relative;
-	min-width: 100vw;
-	min-height: 100vh;
-	max-height: 1080px;
+	width: 100%;
+	height: auto;
+	margin-top: 5vh;
 	font-family: "Poppins", Sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -40,43 +40,29 @@
 
 /* Project container */
 .projects-container .main-container {
+	width: 60%;
+	height: auto;
 	margin: 5rem auto 0 auto;
-	width: 75%;
-	height: 65%;
 }
 
 .projects-container .card-container {
 	position: relative;
-	padding: 5px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	padding: 1rem 0 1rem 0;
 }
 .projects-container .project-card1,
 .project-card2,
 .project-card3 {
 	height: 100%;
+	width: 75%;
+	margin: 0 auto 0 auto;
 	background-color: var(--eerie-black);
 	box-shadow: 0px 0px 5px var(--floral-white);
 	padding: 5px;
 	border-radius: 5px;
 	opacity: 0.9;
 	transition: all 0.3s;
-}
-
-.projects-container .card-container:nth-child(1) {
-	width: 50%;
-	height: 100%;
-	float: left;
-}
-
-.projects-container .card-container:nth-child(2) {
-	width: 50%;
-	height: 50%;
-	float: right;
-}
-
-.projects-container .card-container:nth-child(3) {
-	width: 50%;
-	height: 50%;
-	float: right;
 }
 
 .projects-container .project-card1:hover,
@@ -86,31 +72,26 @@
 }
 
 .project-pic {
-	height: 50%;
+	width: 100%;
+	height: 10rem;
 	background-color: var(--floral-white);
 	border: 1px solid var(--floral-white);
 	border-radius: 5px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .project-card1 .project-pic {
 	background-image: url("./assets/projectImage1.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .project-card2 .project-pic {
 	background-image: url("./assets/projectImage1.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .project-card3 .project-pic {
 	background-image: url("./assets/projectImage1.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .projects-container .project-name {
@@ -122,7 +103,7 @@
 }
 
 .projects-container .project-description {
-	font-size: 16px;
+	font-size: 1vw;
 	margin: 5px 5px 5px 5px;
 	line-height: 150%;
 	color: var(--floral-white);
@@ -135,7 +116,7 @@
 
 .project-techstack span {
 	float: left;
-	font-size: 16px;
+	font-size: 1vw;
 	margin: 5px 5px 5px 5px;
 	padding: 5px;
 	border: 2px solid var(--timberwolf);
@@ -151,7 +132,7 @@
 	margin: 5px;
 	padding: 5px 10px;
 	text-align: center;
-	font-size: 16px;
+	font-size: 1vw;
 	font-weight: 600;
 	text-decoration: none;
 	color: var(--floral-white);

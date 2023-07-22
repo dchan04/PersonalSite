@@ -45,11 +45,7 @@ function Projects() {
 							the popular game called Teamfight Tactics. Its
 							primary objective is to offer straightforward and
 							comprehensive statistics on Little Legend pick
-							rates. By analyzing data from the game, this project
-							aims to provide valuable insights into the frequency
-							at which different Little Legends are chosen by
-							players, helping players make decisions on which
-							Little Legend to purchase next.
+							rates.
 						</div>
 						<div className="project-techstack">
 							<span>React.js</span>
