@@ -8,7 +8,7 @@
 	position: relative;
 	width: 100%;
 	height: auto;
-	margin-top: 5vh;
+	padding-top: 10vh;
 	font-family: "Poppins", Sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -19,8 +19,8 @@
 .projects-container .title {
 	position: relative;
 	height: auto;
-	width: 100vw;
-	font-size: clamp(1vw, 4vw, 10vw);
+	width: 100%;
+	font-size: 4em;
 	font-weight: 400;
 	line-height: 150%;
 	text-align: center;
@@ -40,7 +40,7 @@
 
 /* Project container */
 .projects-container .main-container {
-	width: 60%;
+	width: 75%;
 	height: auto;
 	margin: 5rem auto 0 auto;
 }
@@ -96,14 +96,14 @@
 
 .projects-container .project-name {
 	margin: 5px 5px 5px 5px;
-	font-size: 2vw;
+	font-size: 2em;
 	line-height: 150%;
 	text-align: left;
 	color: var(--floral-white);
 }
 
 .projects-container .project-description {
-	font-size: 1vw;
+	font-size: 1em;
 	margin: 5px 5px 5px 5px;
 	line-height: 150%;
 	color: var(--floral-white);
@@ -116,7 +116,7 @@
 
 .project-techstack span {
 	float: left;
-	font-size: 1vw;
+	font-size: 1em;
 	margin: 5px 5px 5px 5px;
 	padding: 5px;
 	border: 2px solid var(--timberwolf);
@@ -132,7 +132,7 @@
 	margin: 5px;
 	padding: 5px 10px;
 	text-align: center;
-	font-size: 1vw;
+	font-size: 1em;
 	font-weight: 600;
 	text-decoration: none;
 	color: var(--floral-white);

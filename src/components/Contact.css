@@ -4,11 +4,11 @@
 	--black-olive: #403d39ff;
 	--eerie-black: #252422ff;
 	--flame: #eb5e28ff;
+	aspect-ratio: 16/9;
 	position: relative;
-	min-width: 100vw;
+	width: 100%;
 	height: auto;
-	margin-top: 10vh;
-	max-height: 1080px;
+	padding-top: 10vh;
 	font-family: "Poppins", Sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -19,7 +19,7 @@
 .ContactContainer .contact-form {
 	height: 60vh;
 	min-height: 520px;
-	width: 50vw;
+	width: 50%;
 	margin: 5rem auto 0 auto;
 	padding: 25px 50px 25px 50px;
 	background-color: var(--black-olive);
@@ -35,8 +35,8 @@
 .ContactContainer .title {
 	position: relative;
 	height: auto;
-	width: 100vw;
-	font-size: clamp(1vw, 4vw, 10vw);
+	width: 100%;
+	font-size: 4em;
 	font-weight: 400;
 	line-height: 150%;
 	text-align: center;
