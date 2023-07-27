@@ -56,7 +56,12 @@ function Projects() {
 							<span>Bootstrap</span>
 						</div>
 						<div className="project-links">
-							<Button>Live Demo</Button>
+							<Button
+								href="https://dchan04.github.io/Legends/"
+								target="_blank"
+							>
+								Live Demo
+							</Button>
 							<Button
 								href="https://github.com/dchan04/Legends"
 								target="_blank"
