@@ -41,7 +41,7 @@ const Footer = () => (
 						</li>
 						<li>
 							<a
-								href="/assets/DarrenChanResume.pdf"
+								href="https://dchan04.github.io/PersonalSite/DarrenChanResume.pdf"
 								download="DarrenChanResume.pdf"
 							>
 								<Icon.FileEarmarkText color="#fffcf2" />

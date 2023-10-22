@@ -37,7 +37,7 @@ function HomePage() {
 						<span>GitHub</span>
 					</Button>
 					<Button
-						href="/assets/DarrenChanResume.pdf"
+						href="https://dchan04.github.io/PersonalSite/DarrenChanResume.pdf"
 						download="DarrenChanResume.pdf"
 						id="resume"
 						className="flex-center"
