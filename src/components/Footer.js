@@ -1,8 +1,6 @@
 import "./Footer.css";
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Container, Row, Col } from "react-bootstrap";
 import * as Icon from "react-bootstrap-icons";
 
 const Footer = () => (
@@ -24,22 +22,28 @@ const Footer = () => (
 					<h5 className="text-uppercase">Links</h5>
 					<ul className="list-unstyled">
 						<li>
-							<a href="#!">
+							<a
+								href="mailto:darrenchan1123@gmail.com"
+								target="_blank"
+								rel="noreferrer"
+							>
 								<Icon.EnvelopeAt color="#fffcf2" />
 							</a>
 						</li>
 						<li>
-							<a href="#!">
+							<a
+								href="https://github.com/dchan04"
+								target="_blank"
+								rel="noreferrer"
+							>
 								<Icon.Github color="#fffcf2" />
 							</a>
 						</li>
 						<li>
-							<a href="#!">
-								<Icon.Linkedin color="#fffcf2" />
-							</a>
-						</li>
-						<li>
-							<a href="#resume">
+							<a
+								href="/assets/DarrenChanResume.pdf"
+								download="DarrenChanResume.pdf"
+							>
 								<Icon.FileEarmarkText color="#fffcf2" />
 							</a>
 						</li>

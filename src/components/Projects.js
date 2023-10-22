@@ -48,15 +48,63 @@ function Projects() {
 							rates.
 						</div>
 						<div className="project-techstack">
-							<span>React.js</span>
-							<span>.NET 6</span>
-							<span>C#</span>
-							<span>MUI</span>
-							<span>Docker</span>
-							<span>Bootstrap</span>
+							<span>
+								<img
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+									alt="react icon"
+								/>{" "}
+								React.js
+							</span>
+							<span>
+								<img
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+									alt="Asp.net icon"
+								/>{" "}
+								.NET 6
+							</span>
+							<span>
+								<img
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+									alt="C# icon"
+								/>{" "}
+								C#
+							</span>
+							<span>
+								<img
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg"
+									alt="mui icon"
+								/>{" "}
+								MUI
+							</span>
+							<span>
+								<img
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+									alt="Docker icon"
+								/>{" "}
+								Docker
+							</span>
+							<span>
+								<img
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+									alt="Bootstrap icon"
+								/>{" "}
+								Bootstrap
+							</span>
+							<span>
+								<img
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
+									alt="sqlite icon"
+								/>{" "}
+								SQLite
+							</span>
 						</div>
 						<div className="project-links">
-							<Button>Live Demo</Button>
+							<Button
+								href="https://dchan04.github.io/Legends/"
+								target="_blank"
+							>
+								Live Demo
+							</Button>
 							<Button
 								href="https://github.com/dchan04/Legends"
 								target="_blank"
@@ -87,11 +135,41 @@ function Projects() {
 							AI-generated responses tailored to your input.
 						</div>
 						<div className="project-techstack">
-							<span>React.js</span>
-							<span>.NET 7</span>
-							<span>C#</span>
-							<span>Bootstrap</span>
-							<span>Docker</span>
+							<span>
+								<img
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+									alt="react icon"
+								/>{" "}
+								React.js
+							</span>
+							<span>
+								<img
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+									alt="Asp.net icon"
+								/>{" "}
+								.NET 7
+							</span>
+							<span>
+								<img
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+									alt="C# icon"
+								/>{" "}
+								C#
+							</span>
+							<span>
+								<img
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+									alt="Bootstrap icon"
+								/>{" "}
+								Bootstrap
+							</span>
+							<span>
+								<img
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+									alt="Docker icon"
+								/>{" "}
+								Docker
+							</span>
 						</div>
 						<div className="project-links">
 							<Button
@@ -128,13 +206,23 @@ function Projects() {
 						<div className="project-description">
 							The Bionic Text Converter is a user-friendly tool
 							that extracts text from PDF, TXT, and DOCX files and
-							converts it into interactive bionic text.
+							converts it into Bionic Text.
 						</div>
 						<div className="project-techstack">
-							<span>React.js</span>
-							<span>.NET 7</span>
-							<span>Bootstrap</span>
-							<span>Docker</span>
+							<span>
+								<img
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+									alt="react icon"
+								/>{" "}
+								React.js
+							</span>
+							<span>
+								<img
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+									alt="Bootstrap icon"
+								/>{" "}
+								Bootstrap
+							</span>
 						</div>
 						<div className="project-links">
 							<Button

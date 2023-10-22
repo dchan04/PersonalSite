@@ -161,6 +161,13 @@ function About() {
 						</li>
 						<li className="skill-item">
 							<img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
+								alt="sqlite icon"
+							/>{" "}
+							SQLite
+						</li>
+						<li className="skill-item">
+							<img
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
 								alt="Bootstrap icon"
 							/>

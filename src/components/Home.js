@@ -1,6 +1,5 @@
 import "./Home.css";
 import githubIcon from "./assets/github-mark.png";
-import linkedInIcon from "./assets/linkedin.png";
 import resumeIcon from "./assets/resume.png";
 import avatar from "./assets/dcAvatar.png";
 import Image from "react-bootstrap/Image";
@@ -28,11 +27,6 @@ function HomePage() {
 					<Image className="dcAvatar" src={avatar}></Image>
 				</div>
 				<div className="social-links">
-					<Button id="linkedin" className="flex-center">
-						<Image className="linkIcons" src={linkedInIcon}></Image>{" "}
-						<span>LinkedIn</span>
-					</Button>
-
 					<Button
 						href="https://github.com/dchan04"
 						target="_blank"
@@ -42,7 +36,12 @@ function HomePage() {
 						<Image className="linkIcons" src={githubIcon}></Image>{" "}
 						<span>GitHub</span>
 					</Button>
-					<Button id="resume" className="flex-center">
+					<Button
+						href="/assets/DarrenChanResume.pdf"
+						download="DarrenChanResume.pdf"
+						id="resume"
+						className="flex-center"
+					>
 						<Image className="linkIcons" src={resumeIcon}></Image>{" "}
 						<span>Resume</span>
 					</Button>

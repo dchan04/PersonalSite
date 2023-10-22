@@ -1,69 +1,69 @@
 .navbar {
-  --floral-white: #fffcf2ff;
-  --timberwolf: #ccc5b9ff;
-  --black-olive: #403d39ff;
-  --eerie-black: #252422ff;
-  --flame: #eb5e28ff;
-  position: absolute;
-  height: auto;
-  width: 100%;
-  max-height: 7vh;
-  padding-left: 5vw;
-  background-color: transparent !important;
-  z-index: 3;
+	--floral-white: #fffcf2ff;
+	--timberwolf: #ccc5b9ff;
+	--black-olive: #403d39ff;
+	--eerie-black: #252422ff;
+	--flame: #eb5e28ff;
+	position: fixed;
+	height: auto;
+	width: 100%;
+	max-height: 7vh;
+	padding-left: 5vw;
+	background-color: var(--eerie-black) !important;
+	z-index: 3;
 }
 .navbar-nav {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 }
 .nav-link {
-  display: flex;
-  width: 10vw;
-  height: auto;
-  padding-top: 1px;
-  font-family: "Poppins", Sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: clamp(16px, 1vw, 2vw);
-  line-height: 46px;
-  justify-content: center;
-  color: var(--floral-white) !important;
+	display: flex;
+	width: 10vw;
+	height: auto;
+	padding-top: 1px;
+	font-family: "Poppins", Sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: clamp(16px, 1vw, 2vw);
+	line-height: 46px;
+	justify-content: center;
+	color: var(--floral-white) !important;
 }
 .nav-link:hover .linkAnimation {
-  height: 100%;
-  width: 8vw;
+	height: 100%;
+	width: 8vw;
 }
 
 .nav-link .linkAnimation {
-  position: absolute;
-  height: 3px;
-  width: 4vw;
-  background-color: #eb5e28ff;
-  bottom: 0%;
-  z-index: -1;
-  border-radius: 5px;
-  transition: all 0.3s;
+	position: absolute;
+	height: 3px;
+	width: 4vw;
+	background-color: #eb5e28ff;
+	bottom: 0%;
+	z-index: -1;
+	border-radius: 5px;
+	transition: all 0.3s;
 }
 .navbar-brand {
-  width: auto;
-  height: auto;
+	width: auto;
+	height: auto;
 }
 
 .personalLogo {
-  position: relative;
-  width: 10vw;
-  height: auto;
-  transition: all 0.3s;
+	position: relative;
+	width: 10vw;
+	height: auto;
+	transition: all 0.3s;
 }
 
 .personalLogo:hover {
-  width: 11vw;
+	width: 11vw;
 }
 
 #reactLogoColor {
-  color: #61dbfb;
+	color: #61dbfb;
 }
 #aspLogoColor {
-  color: #7c57ff;
+	color: #7c57ff;
 }

@@ -58,7 +58,9 @@ function Contact() {
 			>
 				<Form className="contact-form" onSubmit={handleSubmit}>
 					<Form.Group className="mb-3" controlId="name">
-						<Form.Label>Name</Form.Label>
+						<Form.Label>
+							<b>Name</b>
+						</Form.Label>
 						<Form.Control
 							as="input"
 							type="text"
@@ -67,7 +69,9 @@ function Contact() {
 					</Form.Group>
 
 					<Form.Group className="mb-3" controlId="email">
-						<Form.Label>Email</Form.Label>
+						<Form.Label>
+							<b>Email</b>
+						</Form.Label>
 						<Form.Control
 							as="input"
 							type="email"
@@ -75,7 +79,9 @@ function Contact() {
 						/>
 					</Form.Group>
 					<Form.Group className="mb-4" controlId="message">
-						<Form.Label>Message</Form.Label>
+						<Form.Label>
+							<b>Message</b>
+						</Form.Label>
 						<Form.Control
 							as="textarea"
 							rows={8}
