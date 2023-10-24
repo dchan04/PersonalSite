@@ -41,11 +41,11 @@ function Projects() {
 							Little Legends Tracker
 						</div>
 						<div className="project-description">
-							The Little Legend Statistics project revolves around
-							the popular game called Teamfight Tactics. Its
-							primary objective is to offer straightforward and
-							comprehensive statistics on Little Legend pick
-							rates.
+							Created a web application centered around statistics
+							on "Little Legend" pick rates in a game called
+							Teamfight Tactics. This application offers a fun way
+							for players to explore dynamic trends in 'Little
+							Legend' popularity.
 						</div>
 						<div className="project-techstack">
 							<span>
@@ -129,10 +129,10 @@ function Projects() {
 						<div className="project-pic"></div>
 						<div className="project-name">ChatGPT Clone</div>
 						<div className="project-description">
-							This project explores the capabilities of AI's
-							potential in Web applications. By simply sending a
-							message, you'll experience the power of intelligent
-							AI-generated responses tailored to your input.
+							Developed an intelligent chatbot on the browser
+							using artificial intelligence API. Users interact
+							with the chatbot by sending messages and receiving
+							AI-generated responses.
 						</div>
 						<div className="project-techstack">
 							<span>
